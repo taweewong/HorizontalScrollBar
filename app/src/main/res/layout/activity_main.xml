@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context=".MainActivity">
+
+	<androidx.recyclerview.widget.RecyclerView
+		android:id="@+id/recyclerView"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		app:layout_constraintTop_toTopOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintBottom_toBottomOf="parent"
+		tools:orientation="horizontal"
+		tools:layoutManager="LinearLayoutManager"
+		tools:itemCount="6"
+		tools:listitem="@layout/view_item" />
+
+	<com.taweewong.horizontalscrollbar.HorizontalScrollBar
+		android:id="@+id/horizontalScrollView"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="8dp"
+		app:layout_constraintTop_toBottomOf="@id/recyclerView"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:horizontal_scroll_bar_corner_radius="3dp"
+		app:horizontal_scroll_bar_size="6dp"
+		app:horizontal_scroll_bar_thumb_color="#00E17A"
+		app:horizontal_scroll_bar_thumb_min_width_percent="0.5"
+		app:horizontal_scroll_bar_thumb_width="70dp"
+		app:horizontal_scroll_bar_track_color="#9AAAA2"
+		app:horizontal_scroll_bar_track_width="72dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

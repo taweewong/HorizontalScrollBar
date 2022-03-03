@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<declare-styleable name="HorizontalScrollBar">
+		<attr name="horizontal_scroll_bar_size" format="dimension" />
+		<attr name="horizontal_scroll_bar_corner_radius" format="dimension" />
+
+		<attr name="horizontal_scroll_bar_track_width" format="dimension" />
+		<attr name="horizontal_scroll_bar_track_color" format="color" />
+
+		<attr name="horizontal_scroll_bar_thumb_min_width_percent" format="float" />
+		<attr name="horizontal_scroll_bar_thumb_width" format="dimension" />
+		<attr name="horizontal_scroll_bar_thumb_color" format="color" />
+	</declare-styleable>
+
+</resources>
